@@ -1,0 +1,86 @@
+---------------------20230405----------------------
+
+table 
+
+	<caption> = 제목 달기
+
+text
+
+	<p> = 문단을 하나로 묶기위해 씀 (여백이 생김)
+
+	<b> = 굵은 글씨
+
+	<strong> = 굵은 글씨 (이거로 써라) , 사용자한테 강조되었다고 알림
+
+	<i> = 기울림 (이태리체)
+
+	<em> = 기울림 (이태리체) , 사용자한테 기울어졌다고 알림
+
+	<img> = 이미지 올림
+
+	<sup> = 조그만 문자 (위)
+	<sub> = 조그만 문자 (아래)
+
+	<ins> = 밑줄
+
+	<del> = 취소선
+	
+input
+
+	<input type="값"> = 입력
+	
+	<label> = '값'만 눌러도 활성화 시켜줌
+	
+	<fieldset> = 특정영역 생성
+	
+	<legend> = 특정영역 이름
+	
+CSS
+
+	<[tag문] style = " " >
+	
+	<p, div = " "> -----> (display : block)
+	<span style="color: 컬러값; background-color: 컬러값;">
+		이렇게하면 텍스트 만큼만 색칠해줌 (display : inline )
+		
+	margin = 바깥쪽 상하좌우 여백 정도 (px단위)
+	marin-top , marin-left , marin-bottom , marin-right ....
+	
+	margin : top , left , bottom , right 순으로 나눠서 값을 지정 가능
+	
+	padding = 안쪽 상하좌우 여백 정도 (px단위)
+	
+	font-size = 폰트 사이즈
+	font-size: 3em; // 상위 요소 만큼 크기가 올라감 ex) 3em 3배 크기
+	요즘엔 px 말고 em 으로 씀 /// 어디서든 상대적으로 크기가 변형가능하기 때문 (반응형)
+	 또 요즘엔 em 보다 rem 을 씀 /// 브라우저마다 크기가 달라서 이걸씀
+	
+	font-weight = 글씨 진하게	// h 태그 보다 많이 쓰임
+	
+	text-align = 정렬 (가운데, 왼쪽, 오른쪽)
+	
+head 안에서의 style 사용
+
+	p{
+	
+	}
+	
+	div{
+	
+	}
+	
+	#p_color {		// 이친구는 아이디값
+					// 중복으로 사용하지마라
+	}
+	
+	.p_color2 {		// 이친구는 클래스값 (자바 클래스 아님)
+					// 클래스는 중복으로 사용해도 됨
+    }
+	
+style 우선순위
+
+	// !important  >  inline(태그 내부 style)  >  id  >  class  >  [tag]
+	
+CSS 확장자파일로 만들어서 style 사용
+
+	<link href="[CSS 경로]" rel="stylesheet">

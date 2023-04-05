@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>    <!-- 특정영역을 잡아줌-->
+            <legend>로그인</legend> <!-- 특정 영역의 이름을 부여-->
+            <label>아이디 : <input type="hidden"> </label> <!-- 숨김-->
+            <label>아이디 : <input type="text" id="user" value="test" size="30"> </label>    <!-- test 로 기본값을 준다-->
+            <br>
+            <label for="user_pw">패스워드 : </label><input type="password" id="user_pw" placeholder="패스워드르 입력하세요">
+                <!-- for = " id " 해주면 활성화 시킬수있음 -->  <!-- placeholder 로 희미하게 텍스트를 표시해줌-->
+            <div>test123</div>
+            <div>test123</div>
+            <div>test123</div>
+        </fieldset>
+
+        <fieldset>
+            <legend>체크박스/라디오버튼</legend>
+            <div style="color: red">
+                <label><input type="checkbox" value="1"> 책읽기</label>   <!--'책일기' 만 눌러도 체크됨-->
+                <label><input type="checkbox" value="2"> 영화감상</label>   <!-- value 값을 데이터베이스에 보낸다-->
+                <label><input type="checkbox" value="3"> 운동</label>
+            </div>  <!-- <br> 보단 div 로 영역을 묶어주는게 좋음 , 한번에 관리해야하기때문에-->
+            <div>
+                <label><input type="radio" name="geneder" value="m"> 남자</label> <!-- name 으로 묶어준다-->
+                <label><input type="radio" name="geneder" value="f"> 여자</label>
+            </div>
+            <div>
+                <label><input type="radio" name="dept" value="m"> 컴퓨터학과</label> <!-- dept 로 묶어준다-->
+                <label><input type="radio" name="dept" value="f"> 기계학과</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>그외 input</legend>
+            <label>개수 : <input type="number" min="0" max="5"></label>
+            <label>개수 : <input type="range" min="0" max="5"></label>
+            <label>메일 : <input type="email"></label> <!-- 그냥 text 로 사용해라-->
+            <label>날짜 : <input type="date"></label>   <!-- 별로 안씀;-->
+            <br>
+            <label>파일 : <input type="file"></label>
+            <label>전송 : <input type="submit" ></label>    <!-- 버튼을 누르면 form 페이지로 이동함-->
+            <br>
+            <select>        <!-- 드랍 다운 박스-->
+                <option value="java">자바 프로그래밍</option>
+                <option value="C">C 프로그래밍</option>
+                <option value="DB" selected>데이터베이스</option>   <!-- selected 처음값으로 만듬-->
+            </select>
+            <br>
+            <textarea cols="50" rows="5"></textarea>    <!-- 메모할 공간 만들어줌-->
+            <br>
+            
+        </fieldset>
+    </form>
+
+</body>
+</html>

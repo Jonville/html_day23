@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+</head>
+<body>
+    <h1>전공서적 구매하기</h1>
+    <form>
+        <fieldset>
+            <legend>상품 선택</legend>
+            <h4>주문할 상품을 선택해 주세요.</h4>
+            <ul>
+                <label><li><input type="checkbox">자바 기초 </label><input type="number" value="1" max="5"> 개 (최대 5개)</li>
+                <label><li><input type="checkbox">자바 심화 </label><input type="number" value="0" max="3"> 개 (최대 3개)</li>
+                <label><li><input type="checkbox">DB 기초 </label><input type="number" value="0" max="5"> 개 (최대 5개)</li>
+                <label><li><input type="checkbox">HTML / CSS </label><input type="number" value="0" max="3"> 개 (최대 3개)</li>
+            </ul>
+            <h4>주문 선택</h4>
+            <ul>
+                <label><li><input type="radio" name="order"> 택배</li></label>
+                <label><li><input type="radio" name="order"> 직접 수령</li></label>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <label for="user-name"><li>이름 <input type="text" id="user-name"></li></label>
+                <label for="addr"><li>배송 주소 <input type="text" id="addr"></li></label>
+                <label for="email"><li>이메일 <input type="text" id="email"></li></label>
+                <label for="phone"><li>연락처 <input type="number" id="phone"></li></label>
+                <label for="d-day"><li>배송 지정 <input type="date" id="d-day"><small> (주문일로부터 최소 3일 이후)</small></li></label>
+                <label for="memo"><li>메모 <textarea rows="5" cols="40" id="memo"></textarea></li></label>
+            </ul>
+        </fieldset>
+    </form>
+    <div>
+        <input type="submit" value="주문하기"> 
+        <input type="reset" value="취소하기">
+    </div>
+    
+</body>
+</html>
